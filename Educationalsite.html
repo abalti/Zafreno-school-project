@@ -1,97 +1,131 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+  <head>
+    <title>EducationalSite</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      /* Style the body */
+      body {
+        margin: 0;
+      }
+      .header-container {
+        padding: 15px;
+        color: white;
+        background: black;
+        display: flex;
+        justify-content:space-around;
+      }
+      /* Column container */
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      /* Create two unequal columns that sits next to each other */
+      /* Sidebar/left column */
+      .side {
+        flex: 15%;
+        background-color: #f7f9f2;
+        height: 1200px;
+      }
+      .main {
+        flex: 85%;
+        border: #f7f9f2 3px solid;
+        background-color: #eeeded;
+        padding: 100px;
+      }
+      .main-container {
+        background-color:#CBCAF0;
 
-/* Style the body */
-body {
-  
-  margin: 0;
-}
-.header-container{
-  padding: 30px;
-  color: white;;
-  background: black;
-}
-/* Column container */
-.row {  
-  display: flex;
-  flex-wrap: wrap;
-}
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  flex: 15%;
-  background-color:#F7F9F2;
-    height:1400px;
-}
-.main {
-  flex: 85%;
- border:#F7F9F2 3px solid;
- background-color: #EEEDED; 
-}
-.main-container{
-    background-color:#BEAEE2;
-    width: 1490px;
-    height: 900px;
-    padding: 100px;
-    display: flex;
-    justify-content: center;
-    margin-top: 200px;
-    margin-left: 120px;
-}
-.items-container{
-    background-color: #EEEDED;
-    display:flex;
-    justify-content: space-around;
-    width:1380px;
-    height: 680px;
-    margin-right: 5px;
-    flex-direction: center;
-    border-radius: 30px;
-    padding-top: 30px;
-}
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row, .navbar {   
-    flex-direction: column;
-  }
-}
-</style>
-</head>
-<body>
-  <script src="https://kit.fontawesome.com/dc977682d8.js" crossorigin="anonymous"></script>
-<div class="header-container">
-  <div>Educational website template</div>
-  <div><i class="fa-regular fa-hand"></i></div>
-  
-</div>
+        width: 1100px;
+        height: 600px;
+        padding: 60px;
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+      }
+      .items-container {
+        background-color: #eeeded;
+        display: flex;
+        justify-content: space-around;
+        width: 1380px;
+        height: 480px;
+        margin-right: 5px;
+        flex-direction: center;
+        border-radius: 30px;
+        padding-top: 20px;
+      }
+      .welcome {
+        border: #eeeded 10px solid;
+        background-color: #f7f9f2;
+        justify-content: space-around;
+        display: flex;
+        width: 1100px;
+        padding: 20px;
+      }
+      .headerhand-icon{
+        display: flex;
+        align-items: flex-start;
+      }
+      .search{
+        border:#eeeded 2px solid;
 
-<div class="row">
-  <div class="side">
-  </div>
-  <div class="main">
-    <div class="main-container">
-        <div class="items-container">
-          <div class="nav">Medical</div>
-        <div class="nav">Home</div>
-        <div class="nav">about Us</div>
-        <div class="nav">Pages</div>
-        <div class="nav">Services</div>
-        <div class="nav">Courses</div>
-        <div class="nav">Blogs</div>
-        <div class="nav">Register</div>
-        </div>
-        
+      }
+     
+      /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 700px) {
+        .row,
+        .navbar {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script
+      src="https://kit.fontawesome.com/dc977682d8.js"
+      crossorigin="anonymous"
+    ></script>
+    <div class="header-container">
+      <div class="headerhand-icon"><i class="fa-regular fa-hand"></i></div>
+      <div class="headeritem-title">Educational website template</div>
+      
     </div>
-  </div>
-</div>
-</body>
-</html>
 
+    <div class="row">
+      <div class="side">
+        <search>
+          <form >
+            <input class="search">
+          </form>
+        </search>
+        <div>This is drop down</div>
+      </div>
+      <div class="main">
+        <div class="welcome">
+          <div>Image</div>
+          <div>
+            Welcome to figma! Create an account to edit and collaborate on file
+          </div>
+          <div>Continue with Google</div>
+          <div>Sign up with email</div>
+        </div>
+        <div class="main-container">
+          <div class="items-container">
+            <a href="">Medical</a>
+            <a href="">Home</a>
+            <a href="">about Us</a>
+            <a href="">Pages</a>
+            <a href="">Services</a>
+            <a href="">Courses</a>
+            <a href="">Blogs</a>
+            <a href="">Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
