@@ -5,85 +5,198 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
-      * {
-        box-sizing: border-box;
-      }
-      /* Style the body */
-      body {
-        margin: 0;
-      }
-      .header-container {
-        padding: 15px;
-        color: white;
-        background: black;
-        display: flex;
-        justify-content:space-around;
-      }
-      /* Column container */
-      .row {
-        display: flex;
-        flex-wrap: wrap;
-      }
-      /* Create two unequal columns that sits next to each other */
-      /* Sidebar/left column */
-      .side {
-        flex: 15%;
-        background-color: #f7f9f2;
-        height: 1200px;
-      }
-      .main {
-        flex: 85%;
-        border: #f7f9f2 3px solid;
-        background-color: #eeeded;
-        padding: 100px;
-      }
-      .main-container {
-        background-color:#CBCAF0;
-
-        width: 1100px;
-        height: 600px;
-        padding: 60px;
+      .flex-container {
+      
+        margin: 0 auto;
         display: flex;
         justify-content: center;
-        margin-top: 200px;
       }
-      .items-container {
-        background-color: #eeeded;
+      .all-container {
+        background-color: #eeeeee;
+        margin: 0 auto;
+        width: 70%;
+        height: 700px;
+        margin-top: 30px;
+        border-radius: 40px;
+      }
+      .nav-container {
+        height: 100px;
         display: flex;
-        justify-content: space-around;
-        width: 1380px;
-        height: 480px;
-        margin-right: 5px;
-        flex-direction: center;
-        border-radius: 30px;
-        padding-top: 20px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+        padding-bottom: 15px;
       }
-      .welcome {
-        border: #eeeded 10px solid;
-        background-color: #f7f9f2;
-        justify-content: space-around;
+      ul {
+        list-style: none;
+      }
+      .top-nav {
         display: flex;
-        width: 1100px;
-        padding: 20px;
+        gap: 0.5rem;
       }
-      .headerhand-icon{
-        display: flex;
-        align-items: flex-start;
-      }
-      .search{
-        border:#eeeded 2px solid;
-
-      }
-      a{
+      a {
         text-decoration: none;
+        color: inherit;
       }
-     
       @media screen and (max-width: 700px) {
         .row,
         .navbar {
           flex-direction: column;
         }
       }
+      .Medical {
+        width: 185px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 62px;
+        color: #5e5bfb;
+        line-height: 47px;
+      }
+      .Home {
+        width: 101px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 47px;
+        color: #000000;
+        padding-left: 80px;
+      }
+      .aboutUs {
+        width: 157px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 47px;
+        color: #000000;
+      }
+      .Pages {
+        width: 100px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 47px;
+        color: #000000;
+      }
+      .Services {
+        width: 145px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 47px;
+        color: #000000;
+      }
+      .Courses {
+        width: 141px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 47px;
+        color: #000000;
+      }
+      .Blogs {
+        width: 72px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 47px;
+        color: #000000;
+      }
+      .Register {
+        width: 240px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 47px;
+      }
+      button {
+        display: flex;
+        Justify-content: center;
+        align-items: center;
+        width: 138px;
+        color: #ffffff;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 47px;
+        background-color: #423fe5;
+        border-radius: 10px;
+        text-align: center;
+      }
+      .best-learning {
+        width: 450px;
+        padding-left: 80px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-size: 50px;
+        line-height: 55px;
+        margin-bottom: 3px;
+       
+        color: #5c5b8f;
+      }
+      .lorem {
+        width: 600px;
+        padding-left: 80px;
+        padding-top: -20px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size:28px;
+        line-height: 35px;
+
+        color: #5f5b5b;
+      }
+      .search{
+        padding-left: 80px;
+        
+      }
+      .search-bar{
+        margin-left: 60px;
+        width: 100%;
+        max-width: 500px;
+        background: white;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        
+      }
+      .search-bar input{
+        background: transparent;
+        flex: 1;
+        border: 0;
+        outline: none;
+        padding: 10px 20px;
+        font-size: 15px;
+        color: #EEEEEE;
+        
+      }
+      .search-bar button img{
+        width: 30px;
+        color: #B3B0B0;
+       
+      }
+      .search-bar button {
+        border: 0;
+        width: 180px;
+        height: 42px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 42px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        cursor: pointer;
+        color: #FFFFFF;
+      }
+      
     </style>
   </head>
   <body>
@@ -91,39 +204,53 @@
       src="https://kit.fontawesome.com/dc977682d8.js"
       crossorigin="anonymous"
     ></script>
-    <div class="header-container">
-      <div class="headerhand-icon"><i class="fa-regular fa-hand"></i></div>
-      <div class="headeritem-title">Educational website template</div>
-  
-    </div>
-    <div class="row">
-      <div class="side">
-        <search>
-          <form >
-            <input class="search-input">
-          </form>
-        </search>
-      </div>
-      <div class="main">
-        <div class="welcome">
-          <div>Image</div>
-          <div>
-            Welcome to figma! Create an account to edit and collaborate on file
-          </div>
-          <div>Continue with Google</div>
-          <div>Sign up with email</div>
-        </div>
-        <div class="main-container">
-          <div class="items-container">
-            <a href="">Medical</a>
-            <a href="">Home</a>
-            <a href="">about Us</a>
-            <a href="">Pages</a>
-            <a href="">Services</a>
-            <a href="">Courses</a>
-            <a href="">Blogs</a>
-            <a href="">Register</a>
-          </div>
+
+    <div class="flex-container">
+      <div class="all-container">
+        <nav class="nav-container">
+          <ul class="top-nav">
+            <li class="Medical">
+              <a href="">Medical</a>
+            </li>
+            <li class="Home">
+              <a href="">Home</a>
+            </li>
+            <li class="aboutUs">
+              <a href="">About Us</a>
+            </li>
+            <li class="Pages">
+              <a href="">Pages</a>
+            </li>
+            <li class="Services">
+              <a href="">Services</a>
+            </li>
+            <li class="Courses">
+              <a href="">Courses</a>
+            </li>
+            <li class="Blogs">
+              <a href="">Blogs</a>
+            </li>
+          </ul>
+          <button type="button">Register</button>
+        </nav>
+        <div class="Education">
+          <p class="best-learning">
+            Best Learning Education Platform in the world
+          </p>
+          <p class="lorem">
+            Lorem ipsum dolorsit amet,consectureadipiscing elit. Audax
+            negotium,dicerem impudens,nisi hoc institut translatum ad
+            philosophoo nostros esset
+          </p>
+          <div class="search-container">
+            <form action="" class="search-bar">
+              <img src="Images/image4.svg">
+              <input type="text" placeholder="What do you want to learn">
+              <button type="submit">Search Course</button>
+             
+              
+            </form>
+          
         </div>
       </div>
     </div>
