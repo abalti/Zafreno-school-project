@@ -1,0 +1,325 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+.all-container {
+  flex-direction: column;
+  background-color: #eeeeee;
+  height: 600px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+li {
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+p {
+  font-size: 15px;
+}
+.top-nav {
+  display: flex;
+  flex-flow: wrap;
+  gap: 5rem;
+  padding: 20px;
+
+
+  height: auto;
+  padding-bottom: 10px;
+}
+.register-btn {
+  font-size: 10px;
+  color: #ffffff;
+  background: #423fe6;
+  border: none;
+  height: 30px;
+  width: 100px;
+  border-radius: 2px;
+}
+.button {
+  width: 30px;
+}
+.Medical {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-size: 25px;
+  color: #5e5bfb;
+  margin-left: 6px;
+  padding-top: 2px;
+}
+.Home {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-size: 20px;
+  color: #000000;
+  padding-left: 15px;
+  padding-top: 2px;
+}
+.aboutUs {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-size: 20px;
+  color: #000000;
+  padding-top: 2px;
+}
+.Pages {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-size: 20px;
+  color: #000000;
+  padding-top: 2px;
+}
+.Services {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-size: 20px;
+  color: #000000;
+  padding-top: 2px;
+}
+.Courses {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-size: 20px;
+  color: #000000;
+  padding-top: 2px;
+}
+.Blogs {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-size: 20px;
+  color: #000000;
+  padding-top: 2px;
+}
+.Education {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+
+  margin-left: 1.2rem;
+  padding-top: 10px;
+}
+.best-learning {
+  width: 200px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-size: 25px;
+  line-height: 20px;
+  margin-bottom: 30px;
+  color: #5c5b8f;
+}
+
+.lorem {
+  width: 300px;
+  padding-bottom: 7px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-size: 15px;
+  color: #5f5b5b;
+}
+.search-bar {
+  width: 180px;
+  height: 35px;
+  background: white;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+}
+.search-bar input {
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  font-size: 10px;
+  color: #eeeeee;
+}
+.search-icon {
+  color: #b3b0b0;
+  width: 20px;
+  margin-left: 1px;
+}
+.search-bar button {
+  border: 0;
+  width: 180px;
+  height: 30px;
+  font-size: 10px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 4px;
+  background: #423fe6;
+}
+.image-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.image1-item {
+  align-self: center;
+  padding-left: 380px;
+  margin-top: -20px;
+}
+.image2-item {
+  align-self: center;
+  margin-top: -55px;
+  margin-left: 4px;
+}
+.image-container img {
+  width: 60px;
+}
+.btn {
+  display: flex;
+  border: 0;
+  width: 100px;
+  height: 13px;
+  margin-top: -10px;
+  margin-right: 4px;
+  color: #ffffff;
+  font-size: 4px;
+  background: #423fe6;
+  padding-left: -10px;
+}
+.educ-platform {
+  color: #000000;
+}
+.world {
+  color: #423fe6;
+}

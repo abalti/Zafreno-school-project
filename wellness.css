@@ -1,0 +1,389 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+font-family:'poppins',sans-serif;
+font-size: 16px; 
+line-height: 1.5;
+color: #333;
+
+}
+img{
+  max-width: 100%;
+}
+h1,h2{
+  margin-bottom: 15px
+}
+ul{
+  list-style: none;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: width 1000px;
+  margin: 10px;
+  padding: 60px;
+  
+}
+.navbar{
+  background: #3d4435;
+  color:#fff;
+  height: 60px;
+}
+
+.navbar .container{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  height: 100%;
+
+}
+.navbar  a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+
+}
+.navbar a:hover{
+
+}
+.navbar ul{
+  display: flex;
+}
+.navbar ul li{
+  margin-left: 20px;
+}
+.header{
+  background-color: #3d4435;
+  color:#fff;
+  min-height: 400px;
+  padding: 80px;
+}
+.header h1{
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.header img{
+  max-width: 300px;
+  height: 200px;
+  
+
+}
+.header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 400px;
+}
+.boxes .container{
+  display:flex;
+  justify-content: space-around;
+  
+}
+.left-nav{
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: space-between;
+  
+}
+.box{
+  flex:1;
+  color: #fff;
+  background: #3D4435;
+  border-radius: 10px;
+  margin: 20px 10px;
+  padding: 15px 20px;
+}
+@media(max-width:768px){
+ .header .container{
+  flex-direction: column;
+  padding-top: 20px;
+  text-align: center;
+
+ } 
+ .box .container{
+  display: block;
+  text-align: center;
+  background-color: #3D4435;
+ }
+}
+.left-nav .container{
+  display:flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.center-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.certified{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  padding-left: 30px;
+}
+.workwithmyra{
+  display: flex;
+  justify-content: center;
+  background-color: #3D4435;
+  color: #fff;
+  font-family: 'DM Sans';
+  font-style: normal;
+  padding-top: 50px;
+  margin-top: -8px;
+  font-size: 40px;
+  
+  
+}
+.boxes{
+  background-color: #3d4435;
+  margin: 0 auto;
+
+}
+.boxes a{
+  color: #fff;
+}
+.box{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+padding-left:40px;
+
+}
+ .left-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-left: 25px;
+  padding-top: 40px;
+}
+ 
+ .rt-nav{
+  display: flex;
+  width: 280px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  margin-top: 40px;
+  
+  color: #000000;
+ }
+ .rt-nav button{
+  width: 180px;
+  height: 50px;
+  font-size: 15px;
+ }
+
+ 
+.top-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+ .main-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding-left: 180px;
+  font-family: 'DM Sans';
+  font-style: normal;
+ }
+ .certified{
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-size: 35px;
+  line-height: 60px;
+  margin-bottom: 20px;
+  width: 480px;
+  padding-left: 120px;
+  text-transform: uppercase;
+  padding-top: 50px;
+  margin-bottom: -100px;
+  #subheader-item{
+    font-size: 15px;
+    padding-bottom: 15px;
+  }
+ }
+  p span{
+  padding-left: 30px;
+
+ }
+ .nutrition-items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3D4435;
+  color: #fff;
+  height: 100px;
+  margin-top: -8px;
+ }
+ .left-item{
+  width: 30px;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-left: 40px;
+ }
+ .right-item{
+  width: 50%;
+  padding-left: 30px;
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  align-self: center;
+ }
+ .boxes1{
+  
+  background-color: #3D4435;
+ }
+ .left-image {
+  display: flex;
+  width: 50%;
+ }
+ .left-image  img{
+  width: 300px;
+  height: 360px;
+ }
+  .middle-box{
+    display: flex;
+
+  }
+  .box1{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    color:#fff;
+    
+  }
+  .box1 a{
+    text-decoration: underline;
+    color: inherit;
+  }
+  .box1 h2{
+    margin-top: -80px;
+    padding: 20px;
+    font-size: 20px;
+    
+  }
+  .button{
+    display: flex;
+    width: 150px;
+    height: 60px;
+    color: #000000;
+  }
+  .plan-box{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    margin-top: -100px;
+    padding-left: 10px;
+  }
+  .plan-box button{
+    width: 250px;
+    height: 60px;
+  }
+  .boxes3{
+    background-color: #3D4435;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    
+  }
+  .recipe-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10px 10px;
+    color:#fff;
+    }
+    .recipe-header{
+      display: flex;
+      justify-content: flex-start;
+      color: #fff;
+      padding-left: 120px;
+      padding-top: 40px;
+      text-transform: uppercase;
+      margin-top: -8px;
+      
+    }
+    .recipe-box  p{
+      padding: 15px;
+
+    }
+    .recipe-box img{
+      width: 300px;
+      height: 400px;
+    }
+    
+    .footer{
+      display: flex;
+      flex-direction: column;
+      background-color: #C2C8CC;
+      align-items: center;
+      height: 200px;
+      margin-top: -10px;
+    }
+  .footer h3{
+    font-size: 30px;
+    padding: 20px;
+    font-weight: normal
+   
+
+  }
+  .footer input{
+    width: 280px;
+    height: 70px;
+    text-indent: 20px;
+    font-size: 15px;
+    margin-right: 15px;
+    border: none;
+    color: #fff;
+    
+
+  }
+  .footer button{
+    width: 140px;
+    height: 70px;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    
+  }
+  .footer a {
+    text-decoration: none;
+    color: inherit;
+  }
+   
+    

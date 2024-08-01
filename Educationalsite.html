@@ -5,206 +5,266 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
-      .flex-container {
-      
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-      }
-      .all-container {
-        background-color: #eeeeee;
-        margin: 0 auto;
-        width: 70%;
-        height: 700px;
-        margin-top: 30px;
-        border-radius: 40px;
-      }
-      .nav-container {
-        height: 100px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 50px;
-        padding-bottom: 15px;
-      }
-      ul {
-        list-style: none;
-      }
-      .top-nav {
-        display: flex;
-        gap: 0.5rem;
-      }
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
-      @media screen and (max-width: 700px) {
-        .row,
-        .navbar {
-          flex-direction: column;
-        }
-      }
-      .Medical {
-        width: 185px;
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 35px;
-        line-height: 62px;
-        color: #5e5bfb;
-        line-height: 47px;
-      }
-      .Home {
-        width: 101px;
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 25px;
-        line-height: 47px;
-        color: #000000;
-        padding-left: 80px;
-      }
-      .aboutUs {
-        width: 157px;
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 25px;
-        line-height: 47px;
-        color: #000000;
-      }
-      .Pages {
-        width: 100px;
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 25px;
-        line-height: 47px;
-        color: #000000;
-      }
-      .Services {
-        width: 145px;
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 25px;
-        line-height: 47px;
-        color: #000000;
-      }
-      .Courses {
-        width: 141px;
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 25px;
-        line-height: 47px;
-        color: #000000;
-      }
-      .Blogs {
-        width: 72px;
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 25px;
-        line-height: 47px;
-        color: #000000;
-      }
-      .Register {
-        width: 240px;
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 25px;
-        line-height: 47px;
-      }
-      button {
-        display: flex;
-        Justify-content: center;
-        align-items: center;
-        width: 138px;
-        color: #ffffff;
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 25px;
-        line-height: 47px;
-        background-color: #423fe5;
-        border-radius: 10px;
-        text-align: center;
-      }
-      .best-learning {
-        width: 450px;
-        padding-left: 80px;
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-size: 50px;
-        line-height: 55px;
-        margin-bottom: 3px;
-       
-        color: #5c5b8f;
-      }
-      .lorem {
-        width: 600px;
-        padding-left: 80px;
-        padding-top: -20px;
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 400;
-        font-size:28px;
-        line-height: 35px;
+      /* Reset styles (v2.0) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article,
+aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu,
+nav, output, ruby, section, summary, time,
+mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.flex-container {
+
+      display: flex;
+      justify-content: center; 
+    }
+    .all-container {
+    
+      flex-direction: column;
+      background-color: #eeeeee;
+      height:110px;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+    .nav-container {
+   
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+     
+    }
+    li{
+      font-size: 20px;
+    }
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
+    p{
+      font-size: 2px;
+    }
+ .top-nav{
+  display: flex;
+  flex-flow: wrap;
+  gap: 0.5rem;
+  padding: 12px;
+ 
+  height: auto;
+  padding-bottom: 4px;
+ }
+  .register-btn{
+    font-size: 4px;
+    color: #FFFFFF;
+    background: #423FE6;
+    border: none;
+    height: 8px;
+    border-radius: 2px;
+  }
+  .button{
+    width: 30px;
+
+  }
+  .Medical{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-size: 6px;
+    color: #5E5BFB;
+    margin-left: 6px;
+    padding-top: 2px;
+  }
+  .Home{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-size: 4px;
+    color: #000000;
+    padding-left: 15px;
+    padding-top: 2px;
+   
+   }
+  .aboutUs{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-size: 4px;
+    color: #000000;
+    padding-top: 2px;
+   }
+  .Pages{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-size: 4px;
+    color: #000000;
+    padding-top: 2px;
+   }
+  .Services{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-size: 4px;
+    color: #000000;
+    padding-top: 2px;
+   }
+  .Courses{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-size: 4px;
+    color: #000000;
+    padding-top: 2px;
+   }
+  .Blogs{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-size: 4px;
+    color: #000000;
+    padding-top: 2px;
+   }
+    .Education{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        
+        margin-left: 1.2rem;
+        padding-top: 10px;
+   }
+  .best-learning{
+    width: 60px;
+    font-family: 'DM Sans';
+        font-style: normal;
+        font-size: 7px;
+        line-height: 6px;
+        margin-bottom: 3px;
+        color: #5c5b8f;
+        
+        
+   }
+  .lorem {
+        width: 75px;
+        padding-bottom: 7px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-size:3.4px;
         color: #5f5b5b;
       }
-      .search{
-        padding-left: 80px;
-        
-      }
       .search-bar{
-        margin-left: 60px;
-        width: 100%;
-        max-width: 500px;
+        width:50px;
+        height: 8px;
         background: white;
         display: flex;
         align-items: center;
-        border-radius: 5px;
-        
+        border-radius: 1px;
       }
       .search-bar input{
         background: transparent;
         flex: 1;
         border: 0;
         outline: none;
-        padding: 10px 20px;
-        font-size: 15px;
-        color: #EEEEEE;
-        
+        font-size: 3.2px;
+        color: #EEEEEE; 
       }
-      .search-bar button img{
-        width: 30px;
+      .search-icon{
         color: #B3B0B0;
-       
+        width:5px;
+        margin-left: 1px;
       }
       .search-bar button {
         border: 0;
-        width: 180px;
-        height: 42px;
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 42px;
+        width: 60px;
+        height: 8px;
+        font-size:3px;
         font-family: 'DM Sans';
         font-style: normal;
         cursor: pointer;
         color: #FFFFFF;
+        font-size: 4px;
+        background: #423FE6;
       }
-      
-    </style>
-  </head>
-  <body>
-    <script
-      src="https://kit.fontawesome.com/dc977682d8.js"
-      crossorigin="anonymous"
-    ></script>
 
+      .image-container{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        }
+        .image1-item{
+          align-self: center;
+          padding-left: 85px;
+          margin-top: -20px;
+        }
+        .image2-item{
+          align-self: center;
+          margin-top: -55px;
+          margin-left: 4px;
+          
+        }
+        .image-container img{
+          width:30px;
+        }
+        .btn{
+          display: flex;
+          position:absolute;
+       
+        border: 0;
+        width: 35px;
+        height: 13px;
+        margin-top: -10px;
+        margin-right: 4px;
+        color: #FFFFFF;
+        font-size: 4px;
+        background: #423FE6;
+        padding-left: -10px;
+
+     }
+     .educ-platform{
+      color: #000000;
+     }
+     .world{
+      color: #423FE6;
+
+     }
+     
+     
+      </style>
+     </head>   
+  <body>
     <div class="flex-container">
       <div class="all-container">
         <nav class="nav-container">
@@ -230,12 +290,14 @@
             <li class="Blogs">
               <a href="">Blogs</a>
             </li>
+            <button class="register-btn" type="button">Register</button>
+            <!-- <button class="btn" type="button">Register</button> -->
           </ul>
-          <button type="button">Register</button>
         </nav>
         <div class="Education">
           <p class="best-learning">
-            Best Learning Education Platform in the world
+            Best Learning <span class="educ-platform">Education Platform </span>
+            <span class="world">in the world</span>
           </p>
           <p class="lorem">
             Lorem ipsum dolorsit amet,consectureadipiscing elit. Audax
@@ -243,16 +305,29 @@
             philosophoo nostros esset
           </p>
           <div class="search-container">
-            <form action="" class="search-bar">
-              <img src="Images/image4.svg">
+            <form action="" class="search-bar ">
+              <img class="search-icon" src="Images/image4.svg" alt="image-icon">
               <input type="text" placeholder="What do you want to learn">
-              <button type="submit">Search Course</button>
-             
-              
+              <button type="submit">SearchCourse</button>
             </form>
-          
-        </div>
+            <div class="image-container">
+              <div class="image1-item">
+                <img src="Images/image1.svg" alt="">
+
+                
+
+              </div>
+              <div class="image2-item">
+              <img src="Images/image2.svg" alt="">
+            </div>
+              <button class="btn" type="button"></button> 
+            <div>
+             
+            </div>
+
+            </div>
       </div>
+    
     </div>
   </body>
 </html>
